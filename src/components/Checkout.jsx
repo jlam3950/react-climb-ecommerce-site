@@ -1,6 +1,10 @@
 import React from "react";
 // import { useSelector } from 'react-redux';
 import CartList from "../features/cart/cartList";
+import { useDispatch, useSelector } from 'react-redux';
+import { 
+  SelectPrice, 
+} from '../redux/cartSlice'
 
 const Checkout = () => {
   return (
@@ -12,6 +16,7 @@ const Checkout = () => {
             <h1>Cart</h1>
           </div>
           <hr></hr>
+          <h3> Total Price: ${useSelector(SelectPrice)} </h3>
         </div>
       </div>
       <div
