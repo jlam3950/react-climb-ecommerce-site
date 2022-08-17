@@ -4,20 +4,22 @@ import Navbar from "./components/Navbar";
 import Gear from "./components/Gear";
 import About from "./components/About";
 import Contact from "./components/Contact";
-import Header from "./components/Header";
 import Footer from "./components/Footer";
-import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import Checkout from "./components/Checkout";
+import { Routes, Route} from "react-router-dom";
 
 function App() {
   return (
-     <div className = 'App'>
+     <div className = 'App d-flex flex-column min-vh-100'>
         <Navbar />
           <Routes>
             <Route path = "/" element={<Homepage />}></Route>
             <Route path = "about" element={<About />}></Route>
             <Route path = "contact" element={<Contact />}></Route>
             <Route path = "gear" element={<Gear />}></Route>
+            <Route path = "checkout" element={<Checkout />}></Route>
           </Routes>
+        <Footer />
       </div>
   ); 
 }

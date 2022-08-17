@@ -1,25 +1,26 @@
 import React from "react";
 import LocalStorage from "/Users/Jeff/Desktop/personalprojects/climbing-ecommerce/src/LocalStorage.js";
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { 
   increment,
-  selectQuantity,
+  // selectQuantity,
 } from '../redux/counterSlice';
 import { 
   addToCart,
+  SelectPrice, 
 } from '../redux/cartSlice';
-
+// import { nanoid } from '@reduxjs/toolkit';
 
 
 const Gear = () => {
   // const [itemCount, setItemCount] = useState(0);
   // // onClick = {() => setCount(count - 1)}
   const dispatch = useDispatch();
-  console.log(selectQuantity);
-
+  
   const addProductToCart = (product) => {
-    console.log(product);
-    dispatch(increment());
+    // product.id = nanoid();
+
+    dispatch(increment());    
     dispatch(addToCart(product));
   }
 
@@ -46,6 +47,7 @@ const Gear = () => {
                 />
                 <div class="card-body">
                   <h5 class="card-title">{product.name}</h5>
+                  <span><h6>price: {product.price} </h6> </span>
                   <p class="card-text">
                     {product.description}
                   </p>
