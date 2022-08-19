@@ -1,11 +1,12 @@
 import React from "react";
 import { NavLink } from 'react-router-dom';
 import ShopCart from './buttons/ShopCart';
+import FavoritesBtn from './buttons/FavoritesBtn';
 
 const Navbar = () => {
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light container-fluid py-1 px-5">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light container-fluid py-1 px-3">
         <button
           className="navbar-toggler"
           type="button"
@@ -43,9 +44,10 @@ const Navbar = () => {
             
           </ul>
         </div>
-        <NavLink className="navbar-brand fw-bold" to="#">
+        <NavLink className="navbar-brand fw-bold rightNav" to="#">
           <>Climb Shop</>
-          <ShopCart />
+          <ShopCart /> 
+          <FavoritesBtn />
         </NavLink>
       </nav>
     </>

@@ -2,16 +2,16 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { FaShoppingCart } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
-import { selectQuantity } from "../../redux/counterSlice";
+import { SelectCount } from "../../redux/cartSlice";
 
 const ShopCart = () => {
-  const quantity = useSelector(selectQuantity);
+  const quantity = useSelector(SelectCount);
 
   const quantityCheck = (amount) => (amount === 0 ? "" : (`(${quantity})`));
 
   return (
     <>
-      <button type="button" className="btn btn-light mx-3">
+      <button type="button" className="btn btn-light px-3">
         {" "}
         <NavLink className="nav-link" to="/checkout">
           <FaShoppingCart />
@@ -21,5 +21,4 @@ const ShopCart = () => {
     </>
   );
 };
-console.log(selectQuantity);
 export default ShopCart;

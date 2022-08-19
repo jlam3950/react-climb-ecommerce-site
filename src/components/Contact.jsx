@@ -3,8 +3,10 @@ import React from "react";
 const Contact = () => {
   return (
     <>
-      <h1 class="py-4">Contact Us</h1>
-      <div className="container_form">
+      <h1 className="py-3">Contact Us</h1>
+      {/* <hr></hr> */}
+      <h3 className = 'py-3'> Questions? <br></br>Fill out the form below.</h3>
+      <div className="container_form my-3">
         <form
           size="2"
           action="https://formsubmit.co/jlam3950@gmail.com"
@@ -19,7 +21,7 @@ const Contact = () => {
             type="email"
             className="email_form"
             name="email"
-            placeholder="e-mail address"
+            placeholder="your e-mail address"
             required
           />
           <textarea
@@ -34,6 +36,8 @@ const Contact = () => {
             Send
           </button>
         </form>
+        {/* <h4> Phone: (555)555-5555 </h4>
+        <h4> E-mail: climbshop@gmail.com </h4> */}
       </div>
     </>
   );

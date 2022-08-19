@@ -1,27 +1,27 @@
 import React from "react";
 import LocalStorage from "/Users/Jeff/Desktop/personalprojects/climbing-ecommerce/src/LocalStorage.js";
-import { useDispatch, useSelector } from 'react-redux';
-import { 
-  increment,
-  // selectQuantity,
-} from '../redux/counterSlice';
+import { useDispatch } from 'react-redux';
+import { FaHeart } from "react-icons/fa";
+// import { SelectFav } from "../redux/cartSlice";
 import { 
   addToCart,
-  SelectPrice, 
+  saveToFavorites,
 } from '../redux/cartSlice';
-// import { nanoid } from '@reduxjs/toolkit';
-
 
 const Gear = () => {
   // const [itemCount, setItemCount] = useState(0);
   // // onClick = {() => setCount(count - 1)}
+  // const favQuantity = useSelector(SelectFav);
   const dispatch = useDispatch();
   
   const addProductToCart = (product) => {
-    // product.id = nanoid();
-
-    dispatch(increment());    
     dispatch(addToCart(product));
+  }
+
+  const favoritesBtnEvent = (product) => {
+    // let status = product.favorite;
+    // product.favorite = !product.favorite;
+    dispatch(saveToFavorites(product));
   }
 
   return (
@@ -35,24 +35,25 @@ const Gear = () => {
           <hr></hr>
         </div>
       </div>
-      <div className="container mx-auto container_gear" style = {{width: '100vw'}}>
+      <div className="container mx-auto container_gear d-flex justify-content-center" style = {{width: '100vw'}}>
         <div className="row">
-          {LocalStorage.map((product) => {
+          {LocalStorage.map((product, idx) => {
             return (
-              <div class="card mx-3 my-3" style={{ width: "18rem" }}>
+              <div className="card mx-3 my-3" style={{ width: "18rem" }} key = {idx}>
                 <img
-                  class="card-img-top"
+                  className="card-img-top"
                   src= {product.image}
                   alt={product.title}
                 />
-                <div class="card-body">
-                  <h5 class="card-title">{product.name}</h5>
+                <div className="card-body">
+                  <h5 className="card-title">{product.name}</h5>
                   <span><h6>price: {product.price} </h6> </span>
-                  <p class="card-text">
+                  <p className="card-text">
                     {product.description}
                   </p>
-                  <button class="btn btn-success mx-2" onClick = {() => {addProductToCart(product)}}>Add to Cart</button>
-                  <button class="btn btn-primary mx-2" > Wishlist </button>
+                  <button className="btn btn-success mx-2" onClick = {() => {addProductToCart(product)}}>Add to Cart</button>
+                  <button className="btn btn-primary mx-2" onClick = {() => {favoritesBtnEvent(product)}}> 
+                  <FaHeart className = { product.favorite === true ? 'selected' : 'notSelected'}/></button>
                 </div>
               </div>
             );
