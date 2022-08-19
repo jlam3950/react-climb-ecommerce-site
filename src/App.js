@@ -6,7 +6,8 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Checkout from "./components/Checkout";
-import { Routes, Route} from "react-router-dom";
+import Favorites from "./components/Favorites";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path = "contact" element={<Contact />}></Route>
             <Route path = "gear" element={<Gear />}></Route>
             <Route path = "checkout" element={<Checkout />}></Route>
+            <Route path = "favorites" element={<Favorites />}></Route>
           </Routes>
         <Footer />
       </div>
