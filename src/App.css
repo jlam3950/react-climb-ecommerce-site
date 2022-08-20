@@ -1,5 +1,7 @@
+
 .App {
   text-align: center;
+  background: rgb(248, 245, 245);
 }
 
 .App-logo {
@@ -28,24 +30,16 @@
 }
 
 /* Homepage */
-.hero{
-  height: 70vh;
-  width: 120vw;
-}
 
 .hero_header{
   font-size: 3rem;
   margin: 0 auto;
-  /* margin-bottom: 40%;
-  margin-left: 40%;
-  color: rgb(231, 228, 228);
-  font-weight: 900; */
-  /* -webkit-text-stroke-width: 2.5px;
-  -webkit-text-stroke-color: black; */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
 }
 
 .carousel_splash{
-  height: 70vh;
+  height: 75vh;
 }
 
 /* About */
@@ -54,15 +48,42 @@
   margin: 0 auto;
 }
 
+.about_container{
+  max-width: 70rem;
+}
+
+.carousel_container{
+  min-height: 21rem;
+}
+
+.review_img_container{
+  max-width: 6rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 11rem;
+}
+
+.testimonialImages{
+  border-radius: 50%;
+}
+
 /* Contact */
 
 .container_form > form{
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   margin: 0 auto;
-  max-width: 50vw;
+  max-width: 45vw;
   min-width: 25rem;
+}
+
+.question_header{
+    animation: fade-in 2s; 
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 form > *{
@@ -79,6 +100,10 @@ form > *{
   color: white;
 }
 
+.card_description{
+  height: 3rem;
+}
+
 /* Checkout */
 .hidePrice{
   visibility:hidden;
@@ -87,8 +112,6 @@ form > *{
 /* Cart */
 
 .item_counter{
-  /* border: .5px solid black;
-  border-radius: 10px; */
   padding: .5rem;
   margin-left: .5rem;
   margin-top: .5rem;
@@ -102,3 +125,6 @@ form > *{
 
 /* Footer */
 
+.footerIcon:hover{
+  transform: scale(1.1);
+}
