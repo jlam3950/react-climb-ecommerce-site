@@ -25,7 +25,7 @@ const FavoriteList = () => {
           <span>
             <h6>price: {product.price} </h6>{" "}
           </span>
-          <p className="card-text">{product.description}</p>
+          <p className="card-text card_description">{product.description}</p>
           <div>
           <button className="btn btn-success mx-2" onClick = {() => {addProductToCart(product)}}>
               Add to Cart

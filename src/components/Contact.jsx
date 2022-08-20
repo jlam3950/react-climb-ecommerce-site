@@ -1,12 +1,15 @@
 import React from "react";
 
 const Contact = () => {
+
+ 
   return (
-    <>
-      <h1 className="py-3">Contact Us</h1>
-      {/* <hr></hr> */}
-      <h3 className = 'py-3'> Questions? <br></br>Fill out the form below.</h3>
-      <div className="container_form my-3">
+    <div className = 'container contact_container'>
+      <h1 className="py-4">Contact Us</h1>
+      <h3 className = 'py-2 question_header'> Questions?
+        <h5 className = 'py-2'>Please, fill out the form below</h5>
+      </h3>
+      <div className="container_form">
         <form
           size="2"
           action="https://formsubmit.co/jlam3950@gmail.com"
@@ -36,10 +39,10 @@ const Contact = () => {
             Send
           </button>
         </form>
-        {/* <h4> Phone: (555)555-5555 </h4>
-        <h4> E-mail: climbshop@gmail.com </h4> */}
+        <>
+        </>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -6,7 +6,7 @@ import FavoritesBtn from './buttons/FavoritesBtn';
 const Navbar = () => {
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light container-fluid py-1 px-3">
+      <nav className="navbar navbar-expand-lg navbar-light bg-lights container-fluid py-1 px-3">
         <button
           className="navbar-toggler"
           type="button"
@@ -44,11 +44,13 @@ const Navbar = () => {
             
           </ul>
         </div>
-        <NavLink className="navbar-brand fw-bold rightNav" to="#">
-          <>Climb Shop</>
+        <div>
+          <NavLink className="navbar-brand fw-bold rightNav" to="/">
+            <>Climb Shop</>
+          </NavLink>
           <ShopCart /> 
           <FavoritesBtn />
-        </NavLink>
+        </div>
       </nav>
     </>
   );

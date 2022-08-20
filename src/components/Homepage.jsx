@@ -7,7 +7,7 @@ import Carousel from 'react-bootstrap/Carousel';
 const Homepage = () => {
   return (
     <>
-      <Carousel>
+      <Carousel interval = {null}>
       <Carousel.Item>
         <img
           className="d-block w-100 carousel_splash"
@@ -16,7 +16,7 @@ const Homepage = () => {
         />
         <Carousel.Caption>
           <h1 class = 'hero_header'> Climb Shop </h1>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <p>For all of your rock climbing needs.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -27,8 +27,8 @@ const Homepage = () => {
         />
 
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3>Explore. Adventure. Climb.</h3>
+          <p></p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -39,9 +39,9 @@ const Homepage = () => {
         />
 
         <Carousel.Caption>
-          <h3>Third slide label</h3>
+          <h3>Top rated climbing shop</h3>
           <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            Official vendor of Black Diamond gear and apparel.
           </p>
         </Carousel.Caption>
       </Carousel.Item>
