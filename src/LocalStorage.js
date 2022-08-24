@@ -14,7 +14,7 @@ import camalot from './images/product_images/camalot.jpg';
 import chalkbag from './images/product_images/chalkbag.jpg';
 import greyhelm from './images/product_images/greyhelm.jpg';
 import rackpack from './images/product_images/rackpack.jpg';
-import redblackharness from './images/product_images/redblackharness.jpg';
+import redblackharness from   './images/product_images/redblackharness.jpg';
 import ropeMarker from './images/product_images/ropeMarker.jpg';
 
 

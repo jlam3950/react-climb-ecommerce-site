@@ -7,11 +7,11 @@ const About = () => {
       <h1 className="py-4">About</h1>
 
       <div className="container text-center py-1">
-        <div class="row">
+        <div className="row">
           <div className = 'carousel_container'>
             <APIfetch />
           </div>
-          <div class="col-12 mx-auto about_container">
+          <div className="col-12 mx-auto about_container">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eum,
             dignissimos blanditiis sunt eaque beatae cumque, obcaecati saepe
             nulla dolore quod, aut eligendi similique ex ab mollitia voluptates
