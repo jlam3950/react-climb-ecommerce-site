@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
-import LocalStorage from "/Users/Jeff/Desktop/personalprojects/climbing-ecommerce/src/LocalStorage.js";
+import LocalStorage from "../LocalStorage";
 import { useDispatch } from "react-redux";
 import { FaHeart } from "react-icons/fa";
 import { addToCart, saveToFavorites } from "../redux/cartSlice";
 
 const Gear = () => {
   const [searchProd, setSearchProd] = useState("");
-
+  const [favColor, setfavColor] = useState(false);
   const dispatch = useDispatch();
 
   const addProductToCart = (product) => {
@@ -14,9 +14,9 @@ const Gear = () => {
   };
 
   const favoritesBtnEvent = (product) => {
-    product.favorite = !product.favorite;
+    setfavColor(!favColor);
+    product.favorite = !product.favorite; 
     dispatch(saveToFavorites(product));
-    console.log(product.favorite);
   };
 
   return (

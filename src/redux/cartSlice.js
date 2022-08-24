@@ -1,5 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit";
-// import { combineReducers } from "@reduxjs/toolkit";
 
 const initialState = {
  cart: [],
@@ -23,7 +22,7 @@ const cartSlice = createSlice({
         item.quantity += 1;
       }
       else if(!item){
-        state.cart.push(action.payload);
+        state.cart.push({...action.payload});
         
       } 
       state.count += 1;
@@ -72,11 +71,11 @@ const cartSlice = createSlice({
           )
   
         if(item){
-          alert('This is already in the cart.');
-          // state.favList.push(action.payload);
+          state.favList = state.favList.filter((x) => x.id !== action.payload.id)
+          state.favorites -=1;
         }
         else if(!item){
-          state.favList.push(action.payload);
+          state.favList.push({...action.payload});
           state.favorites += 1;
         } 
       },
