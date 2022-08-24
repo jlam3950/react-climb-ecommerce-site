@@ -1,7 +1,7 @@
 import React from "react";
-import Hero from "/Users/Jeff/Desktop/personalprojects/climbing-ecommerce/src/images/Hero.jpg";
-import Hero1 from "/Users/Jeff/Desktop/personalprojects/climbing-ecommerce/src/images/Hero1.jpg";
-import Hero2 from "/Users/Jeff/Desktop/personalprojects/climbing-ecommerce/src/images/Hero2.jpg";
+import Hero from "../images/Hero.jpg";
+import Hero1 from "../images/Hero1.jpg";
+import Hero2 from "../images/Hero2.jpg";
 import Carousel from 'react-bootstrap/Carousel';
 
 const Homepage = () => {
