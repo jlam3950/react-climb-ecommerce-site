@@ -1,31 +1,22 @@
 import React from "react";
 import APIfetch from "../features/about/APIfetch";
+import About2 from '../images/About2.jpg';
 
 const About = () => {
   return (
     <>
       <h1 className="py-4">About</h1>
 
-      <div className="container text-center py-1">
-        <div className="row">
-          <div className = 'carousel_container'>
-            <APIfetch />
-          </div>
-          <div className="col-12 mx-auto about_container">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eum,
-            dignissimos blanditiis sunt eaque beatae cumque, obcaecati saepe
-            nulla dolore quod, aut eligendi similique ex ab mollitia voluptates
-            minima assumenda consequatur! Ex nobis perferendis quod beatae sint
-            quasi magni praesentium eligendi voluptatibus aliquam harum earum
-            placeat repellat corporis minima impedit adipisci possimus
-            necessitatibus dolor laboriosam neque facilis, dolores esse
-            officiis! Nulla ipsam esse quasi ex consequatur corrupti aperiam
-            facere sint nemo, laboriosam earum ipsum animi? Dolor officiis quasi
-            fugiat culpa recusandae saepe minima, quo reprehenderit optio sint
-            iusto itaque a aut maiores dolores nisi quaerat magnam velit amet
-            voluptatum fugit accusantium ipsa reiciendis autem?
-          </div>
+      <div className="container-sm mx-auto px-2 about_container">
+         <p className = 'mx-3'> 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam commodi odio itaque dignissimos cum, totam deserunt corrupti vero animi sed libero minus molestias esse nemo soluta doloremque sint et repellat labore, iusto sunt! Architecto, dolore deleniti. Cumque cupiditate tempore impedit sed rerum laboriosam nesciunt, earum saepe quasi esse sint debitis.
+         </p>
+         <img src = { About2 } alt = {''} className = 'about w-100'></img>
         </div>
+      <div className="container text-center">
+          <div>
+              <APIfetch />
+          </div>
       </div>
     </>
   );

@@ -26,52 +26,85 @@
 
 /* Navbar */
 .rightNav{
+  font-size: 1.4rem;
   color: rgb(230, 59, 59);
+}
+
+.navbar{
+  width: 100%;
+}
+
+.rightNav_hide{
+  display: none;
 }
 
 /* Homepage */
 
 .hero_header{
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin: 0 auto;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: rgb(230, 59, 59);
+  color: rgb(230, 59, 59);
 }
 
 .carousel_splash{
   height: 75vh;
 }
 
+@media only screen and (min-width: 1400px){
+  .carousel_splash{
+    height: 80vh;
+  }
+}
+
 /* About */
 
-.about_image{
+
+.about{
   margin: 0 auto;
+  max-height: 50vh;
 }
 
 .about_container{
   max-width: 70rem;
 }
 
-.carousel_container{
+/* .carousel_container{
   min-height: 21rem;
-}
+} */
 
-.review_img_container{
+.img_container{
   max-width: 6rem;
   margin: 0 auto;
-  margin-top: 1rem;
+  margin-top: 1rem; 
   margin-bottom: 11rem;
+  min-height: 10vh;
 }
 
 .testimonialImages{
   border-radius: 50%;
 }
 
+@media only screen and (max-width: 600px){
+  .testimonialImages{
+    visibility: hidden;
+  }
+}
+
 /* Contact */
+
+.container_form{
+  display: flex;
+  justify-content: center;
+}
 
 .container_form > form{
   display: flex;
   flex-direction: column;
+  justify-content: center;
   margin: 0 auto;
   max-width: 45vw;
   min-width: 25rem;
@@ -127,4 +160,16 @@ form > *{
 
 .footerIcon:hover{
   transform: scale(1.1);
+}
+
+nav ul li {
+  position:relative;
+}
+
+.drop-down{
+  position:absolute;
+  top:100%;
+  left:0;
+  right:0;
+  z-index:1;
 }
