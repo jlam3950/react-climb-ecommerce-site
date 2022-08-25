@@ -20,29 +20,32 @@ const APIfetch = () => {
 
   return (
 
-    <div>
+    <>
       <h4 className="reviews my-2">Climb Shop Testimonials:</h4>
       <Carousel data-interval='1000'>
         {reviews.map(review => (
           <Carousel.Item key={review.id}>
-          <div className = 'review_img_container'>
+          <div className = 'img_container'>
             <img
-              className="testimonialImages d-block w-100 reviewImg"
+              className="d-block w-100 testimonialImages"
+              // className="testimonialImages reviewImg d-block w-100"
               src={review.avatar}
               alt={review.author}
             />
           </div>
             <Carousel.Caption>
-              <h3 className = 'text-dark my-1'>{review.name}</h3>
-              <p className = 'text-dark my-1'>{review.message} </p>
+              <div>
+              <h3 className = 'text-dark about_name'>{review.name}</h3>
+              <p className = 'text-dark'>{review.message} </p>
               <p className = 'text-dark font-weight-bold'>
                Store Rating : {review.rating}
               </p>
+              </div>
             </Carousel.Caption>
           </Carousel.Item>
         ))}
       </Carousel>
-    </div>
+    </>
   )
 }
 

@@ -41,7 +41,7 @@ const Homepage = () => {
         <Carousel.Caption>
           <h3>Top rated climbing shop</h3>
           <p>
-            Official vendor of Black Diamond gear and apparel.
+            Proud vendor of Black Diamond gear and apparel.
           </p>
         </Carousel.Caption>
       </Carousel.Item>

@@ -43,7 +43,7 @@ const Gear = () => {
         className="container mx-auto container_gear d-flex justify-content-center"
         style={{ width: "100vw" }}
       >
-        <div className="row">
+        <div className="row justify-content-center">
           {LocalStorage.filter((input) => {
             if (searchProd === "") {
               return input;
