@@ -66,6 +66,8 @@
 .about{
   margin: 0 auto;
   max-height: 50vh;
+  border-radius: 10px;
+  margin-bottom: 1rem;
 }
 
 .about_container{
