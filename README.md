@@ -1,7 +1,8 @@
 # Overview 
 
-
 src/images/readme_splash.jpg
+<img src="src/images/readme_splash.jpg" alt="ClimbShop Logo" width="320">
+
 
 Climb Shop is a rock climbing e-commerce application built with React, Redux, and styled with React Bootstrap. Features Paypal implementation for checkout.
 
@@ -21,11 +22,10 @@ Climb Shop is a rock climbing e-commerce application built with React, Redux, an
    ```sh
    git clone https://github.com/jlam3950/react-climb-ecommerce-site.git
    ```
-2. Install NPM packages
+2. Enter the following code in the terminal 
    ```sh
-   npm install
+   NPM Start
    ```
-3. Enter NPM Start in the terminal 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Technologies Used
