@@ -1,8 +1,11 @@
 # Overview 
 
+
+<img src="images/readme_splash.jpg" alt="Logo" width="80" height="80">
+
 Climb Shop is a rock climbing e-commerce application built with React, Redux, and styled with React Bootstrap. Features Paypal implementation for checkout.
-- Live website: n/a 
-- Video Walkthrough: n/a
+
+- Live website: https://climb-shop.netlify.app
 
 ## Features 
 - HTML request via Axios to retrieve user testimonials 
@@ -14,21 +17,24 @@ Climb Shop is a rock climbing e-commerce application built with React, Redux, an
 
 ## Navigating the App 
 
-Currently, the application runs locally by entering the command NPM START in the terminal. The App is currently structured: 
-- Home 
-- About
-- Contact 
-- Shop
-- Cart 
-- Favorites 
+1. Clone the repo
+   ```sh
+   git clone https://github.com/jlam3950/react-climb-ecommerce-site.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+3. Enter NPM Start in the terminal 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## Technologies Used
 
 React, Redux modern toolkit, Axios, React Router, React Boostrap, Flexbox, CSS 
 
 ## Future Plans
 
-- Host via netlify, heroku. 
 - Use mongoDB to store shop items. 
 - Add more shop items, categories.
-- Fix favorites button toggle
 - Create API for user testimonials. Replace mock testimonial's API. 
+
