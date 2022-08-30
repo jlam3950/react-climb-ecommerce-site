@@ -1,7 +1,6 @@
 # Overview 
 
-src/images/readme_splash.jpg
-<img src="src/images/readme_splash.jpg" alt="ClimbShop Logo" width="320">
+<img src="src/images/readme_splash.jpg" alt="ClimbShop Logo" min-width="320">
 
 
 Climb Shop is a rock climbing e-commerce application built with React, Redux, and styled with React Bootstrap. Features Paypal implementation for checkout.
