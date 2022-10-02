@@ -1,39 +1,39 @@
-# Overview 
+<h1> Climb Shop </h1>
 
-<img src="src/images/readme_splash.jpg" alt="ClimbShop Logo" min-width="320">
-
+Live website: https://climb-shop.netlify
+# Overview
+- [About the Project](#about-the-project)
+- [Features](#features)
+- [Videos & Screenshots](#videos-and-screenshots)
+- [Built With](#built-with)
+- [Acknowledgments](#acknowledgments)
+- [Authors](#authors)
+## About The Project
 
 Climb Shop is a rock climbing e-commerce application built with React, Redux, and styled with React Bootstrap. Features Paypal implementation for checkout.
-
-- Live website: https://climb-shop.netlify.app
-
-## Features 
+## Features
 - HTML request via Axios to retrieve user testimonials 
 - Add/Remove items to cart, adjust quantity 
 - Add/Remove favorite items
-- Filter shop items in search bar 
-​- Paypal, venmo checkout 
+- Filter shop items in search bar
+- Paypal, venmo checkout 
 - UI/UX styled with Flexbox, React Bootstrap.
 
-## Navigating the App 
+## Videos & Screenshots
 
-1. Clone the repo
-   ```sh
-   git clone https://github.com/jlam3950/react-climb-ecommerce-site.git
-   ```
-2. Enter the following code in the terminal 
-   ```sh
-   NPM Start
-   ```
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<img class = 'readme' src="src/images/readme_splash.jpg" width="270px" margin='2rem'> <img src='src/images/readme_splash2.png' width="270px"> <img src="src/images/readme_splash3.png" width="270px"> 
 
-## Technologies Used
+## Built With 
+* React
+* Redux
+* React Router
+* Bootstrap 
+* Flexbox 
 
-React, Redux modern toolkit, Axios, React Router, React Boostrap, Flexbox, CSS 
 
-## Future Plans
+## Acknowledgements
+- [Paypal](https://developer.paypal.com)
 
-- Use mongoDB to store shop items. 
-- Add more shop items, categories.
-- Create API for user testimonials. Replace mock testimonial's API. 
+## Authors
+- **Jeff L** - [jlam3950](https://github.com/jlam3950)
 
